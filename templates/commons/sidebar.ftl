@@ -40,7 +40,7 @@
                     <li>
                         <article>
                             <header>
-                                <h3><a href="/${sideBarPost1.noExtensionUri}">${sideBarPost1.title}</a></h3>
+                                <h3><a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(sideBarPost1.noExtensionUri??,sideBarPost1.uri)}">${sideBarPost1.title}</a></h3>
                                  <time class="published"
 							            datetime='${sideBarPost1.date?string("MMM dd, yyyy")}'>
 							            ${sideBarPost1.date?string("MMM dd, yyyy")}</time>
@@ -90,7 +90,7 @@
             <p>${config.sidebar_intro_about}</p>
 
             <ul class="actions">
-                <li><a href="/about" class="button">Learn More</a></li>
+                <li><a href="${config.sidebar_intro_about_learnMore}" class="button">Learn More</a></li>
             </ul>
         </section>
 

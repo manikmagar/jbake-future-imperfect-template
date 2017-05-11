@@ -94,7 +94,7 @@
                 <#list published_posts as menuPost1>
                 	<#if (menuPost1?counter > config.sidebar_postAmount?number) ><#break/></#if>
                     <li>
-                        <a href="${menuPost1.noExtensionUri}"><p>${menuPost1.title}</p></a>
+                        <a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(menuPost1.noExtensionUri??,menuPost1.uri)}"><p>${menuPost1.title}</p></a>
                     </li>
                 </#list>
             </ul>

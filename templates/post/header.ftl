@@ -1,10 +1,10 @@
 <header>
     <div class="title">
         <#if (titleH1 == true)??>
-            <h1><a href="/${post.noExtensionUri}">${post.title}</a></h1>
+            <h1><a href="/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h1>
             <#assign titleH1 = false />
         <#else>
-            <h2><a href="/${post.noExtensionUri}">${post.title}</a></h2>
+            <h2><a href="/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h2>
         </#if>
        	<#if (post.description != null)??>
             <p>${post.description}</p>

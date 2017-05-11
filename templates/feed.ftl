@@ -12,9 +12,9 @@
     <#list published_posts as post>
     <item>
       <title><#escape x as x?xml>${post.title}</#escape></title>
-      <link>${config.site_host}/${post.noExtensionUri}</link>
+      <link>${config.site_host}/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}</link>
       <pubDate>${post.date?string("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
-      <guid isPermaLink="false">${post.noExtensionUri}</guid>
+      <guid isPermaLink="false">${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}</guid>
       	<description>
 	<#escape x as x?xml>	
 	${post.body}

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JBake</title>
-    <link>https://manik.magar.me/jbake-future-imperfect-template/</link>
-    <atom:link href="https://manik.magar.me/jbake-future-imperfect-template//feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://manik.magar.me/jbake-future-imperfect-template</link>
+    <atom:link href="https://manik.magar.me/jbake-future-imperfect-template/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Thu, 11 May 2017 01:03:58 -0400</pubDate>
-    <lastBuildDate>Thu, 11 May 2017 01:03:58 -0400</lastBuildDate>
+    <pubDate>Thu, 11 May 2017 09:09:38 -0400</pubDate>
+    <lastBuildDate>Thu, 11 May 2017 09:09:38 -0400</lastBuildDate>
 
     <item>
       <title>Fourth Post</title>
-      <link>https://manik.magar.me/jbake-future-imperfect-template//blog/2013/fourth-post/</link>
+      <link>https://manik.magar.me/jbake-future-imperfect-template/blog/2013/fourth-post.html</link>
       <pubDate>Thu, 17 Oct 2013 00:00:00 -0400</pubDate>
-      <guid isPermaLink="false">blog/2013/fourth-post/</guid>
+      <guid isPermaLink="false">blog/2013/fourth-post.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&lt;/p&gt;
@@ -41,9 +41,9 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>Third Post</title>
-      <link>https://manik.magar.me/jbake-future-imperfect-template//blog/2013/third-post/</link>
+      <link>https://manik.magar.me/jbake-future-imperfect-template/blog/2013/third-post.html</link>
       <pubDate>Thu, 26 Sep 2013 00:00:00 -0400</pubDate>
-      <guid isPermaLink="false">blog/2013/third-post/</guid>
+      <guid isPermaLink="false">blog/2013/third-post.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&lt;/p&gt;
@@ -71,9 +71,9 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>Second Post</title>
-      <link>https://manik.magar.me/jbake-future-imperfect-template//blog/2013/second-post/</link>
+      <link>https://manik.magar.me/jbake-future-imperfect-template/blog/2013/second-post.html</link>
       <pubDate>Sun, 25 Aug 2013 00:00:00 -0400</pubDate>
-      <guid isPermaLink="false">blog/2013/second-post/</guid>
+      <guid isPermaLink="false">blog/2013/second-post.html</guid>
       	<description>
 	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&lt;/p&gt;
 &lt;ul&gt;
@@ -85,9 +85,9 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.&lt;/p&gt;
     </item>
     <item>
       <title>First Post</title>
-      <link>https://manik.magar.me/jbake-future-imperfect-template//blog/2013/first-post/</link>
+      <link>https://manik.magar.me/jbake-future-imperfect-template/blog/2013/first-post.html</link>
       <pubDate>Wed, 24 Jul 2013 00:00:00 -0400</pubDate>
-      <guid isPermaLink="false">blog/2013/first-post/</guid>
+      <guid isPermaLink="false">blog/2013/first-post.html</guid>
       	<description>
 	
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.&lt;/p&gt;

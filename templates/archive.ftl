@@ -21,7 +21,7 @@
 					<li>
 				        <article>
 				            <header>
-				                <h3>${post.date?string("dd")} - <a href="${content.rootpath}${post.noExtensionUri}"><#escape x as x?xml>${post.title}</#escape></a></h3>
+				                <h3>${post.date?string("dd")} - <a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"><#escape x as x?xml>${post.title}</#escape></a></h3>
 				                 
 				            </header>
 				        </article>
