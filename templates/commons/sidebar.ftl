@@ -4,12 +4,12 @@
     <!-- Intro -->
         <section id="intro">
                 <#if (config.sidebar_intro_pic_circle?boolean == true)>
-                    <a href="/" class="logo"><img src="${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                
                 <#elseif (config.sidebar_intro_pic_imperfect?boolean == true) >
-                    <a href="/" class="logo"><img src="${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
                 <#else>
-                    <a href="/" class="logo"><img src="${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                  </#if>
                  
                 <header>

@@ -18,7 +18,7 @@
             <p>{{ .ReadingTime }} minute read</p>
         {{ end }} -->
         <#if (config.site_author_avatar??) >
-        <span class="author"/><span class="name">${post.author!config.site_author}</span><img src="${post.author_avatar!config.site_author_avatar}" alt="${post.author!config.site_author}" /></span>
+        <span class="author"/><span class="name">${post.author!config.site_author}</span><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.author_avatar!config.site_author_avatar}" alt="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.author!config.site_author}" /></span>
         </#if>
     </div>
 </header>
