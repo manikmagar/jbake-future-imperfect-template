@@ -14,6 +14,7 @@
          <time class="published"
             datetime='${post.date?string("MMM dd, yyyy")}'>
             ${post.date?string("MMM dd, yyyy")}</time>
+            <#if ((config.site_includeReadTime!'true')?boolean == true)><div class="eta"></div></#if>
        <!--  {{ if .Site.Params.includeReadingTime }}
             <p>{{ .ReadingTime }} minute read</p>
         {{ end }} -->

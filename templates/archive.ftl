@@ -12,18 +12,17 @@
 						<#if post.date?string("MMMM yyyy") != last_month>
 							</ul>
 							<h4>${post.date?string("MMMM yyyy")}</h4>
-							<ul class="posts">
+							<ul class="post">
 						</#if>
 					<#else>
 						<h4>${post.date?string("MMMM yyyy")}</h4>
-						<ul class="posts">
+						<ul class="post">
 					</#if>
 					<li>
-				        <article>
+				        <article data-file="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}" data-target="article">
+				        	<header>
+				            	<p>${post.date?string("dd")} - <a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"><#escape x as x?xml>${post.title}</#escape></a>  <#if ((config.site_includeReadTime!'true')?boolean == true)> <div class="eta"></div></#if></p>
 				            <header>
-				                <h3>${post.date?string("dd")} - <a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"><#escape x as x?xml>${post.title}</#escape></a></h3>
-				                 
-				            </header>
 				        </article>
 				    </li>
 					<#assign last_month = post.date?string("MMMM yyyy")>

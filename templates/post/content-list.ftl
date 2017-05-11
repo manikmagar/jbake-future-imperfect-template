@@ -1,4 +1,4 @@
-<article class="post">
+<article class="post" data-file="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}" data-target="article">
      <#include "header.ftl">
 
     <#include "../commons/featured.ftl">

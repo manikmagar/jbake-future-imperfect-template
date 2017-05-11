@@ -141,3 +141,20 @@
 	});
 
 })(jQuery);
+
+$(function() {
+
+	$('article').each(function() {
+
+	    $(this).readingTime({
+			readingTimeTarget: $(this).find('.eta'),
+			wordCountTarget: $(this).find('.words'),
+			prependTimeString: 'Read Time: ',
+			remotePath: $(this).attr('data-file'),
+			remoteTarget: $(this).attr('data-target')
+		});
+		
+	});
+	
+});
+

@@ -13,6 +13,7 @@
 		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/main.js"></script>
 		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/backToTop.js"></script>
 		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/highlight.pack.js"></script>
+		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/readingTime.js"></script>
 
 		<!-- This is called by default since this theme uses highlight.js -->
 		<script>hljs.initHighlightingOnLoad();</script>
