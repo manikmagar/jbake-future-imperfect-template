@@ -11,7 +11,7 @@
         	<#list config.site_menus_main as menuItem1>
         		<#if (config.site_menus_main_showTagsDropdown?boolean)?? == true && menuItem1 == 'tags'>
         			<li>
-	                    <a href="${config['site_menus_main_' + menuItem1 + '_url']}">
+	                    <a href="<#if (content.rootpath)??>.${content.rootpath}<#else></#if>${config['site_menus_main_' + menuItem1 + '_url']}">
 	                       
 	                       <i class="${config['site_menus_main_' + menuItem1 + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem1 + '_label']}
 	                        
@@ -26,7 +26,7 @@
         			
         		<#else>
         			<li>
-	                    <a href="${config['site_menus_main_' + menuItem1 + '_url']}">
+	                    <a href="<#if (content.rootpath)??>.${content.rootpath}<#else></#if>${config['site_menus_main_' + menuItem1 + '_url']}">
 	                       
 	                            <i class="${config['site_menus_main_' + menuItem1 + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem1 + '_label']}
 	                        
