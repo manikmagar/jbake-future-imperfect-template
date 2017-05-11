@@ -2,7 +2,8 @@
 	
 	<#include "menu.ftl">
 	<div id="main">
-		<#assign post = content /> 
+		<#assign post = content />
+		<#assign titleH1 = true /> 
 		<#if (post??) >
 			<#include "post/content-single.ftl">
 		</#if>

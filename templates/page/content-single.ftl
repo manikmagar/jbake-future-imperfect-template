@@ -1,13 +1,7 @@
 <article class="post">
    <#include "header.ftl">
-
-    <section id="social-share">
-        <ul class="icons">
-        	<#include "../commons/share-links.ftl">
-        </ul>
-    </section>
-     
-     <#include "../commons/featured.ftl">
+   
+   <#include "../commons/featured.ftl">
      
     <div id="content">
        ${post.body}

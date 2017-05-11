@@ -1,7 +1,7 @@
 <#include "header.ftl">
 	
 	<#include "menu.ftl">
-	<#assign showTags = true />
+	
 	<div id="main">
         <#list published_posts as post>
 		<#if (post??) >
