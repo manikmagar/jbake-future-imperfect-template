@@ -1,6 +1,6 @@
 <header>
     <div class="title">
-        <h1><a href="/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h1>
+        <h1><a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h1>
        	<#if (post.description != null)??>
             <p>${post.description}</p>
         </#if>

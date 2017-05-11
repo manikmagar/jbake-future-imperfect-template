@@ -4,12 +4,12 @@
     <!-- Intro -->
         <section id="intro">
                 <#if (config.sidebar_intro_pic_circle?boolean == true)>
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="${content.rootpath}${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                
                 <#elseif (config.sidebar_intro_pic_imperfect?boolean == true) >
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="${content.rootpath}${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
                 <#else>
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="${content.rootpath}${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                  </#if>
                  
                 <header>
@@ -72,7 +72,7 @@
                     <li>
                         <article>
                             <header>
-                                <a href="/${config.tag_path}/${sideBarTag1}${config.output_extension}">${sideBarTag1}</a>
+                                <a href="${content.rootpath}${config.tag_path}/${sideBarTag1}${config.output_extension}">${sideBarTag1}</a>
                                 <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
                                 <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
                             </header>
@@ -90,7 +90,7 @@
             <p>${config.sidebar_intro_about}</p>
 
             <ul class="actions">
-                <li><a href="${config.sidebar_intro_about_learnMore}" class="button">Learn More</a></li>
+                <li><a href="${content.rootpath}${config.sidebar_intro_about_learnMore}" class="button">Learn More</a></li>
             </ul>
         </section>
 
