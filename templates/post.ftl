@@ -8,5 +8,9 @@
 			<#include "post/content-single.ftl">
 		</#if>
     </div>
+    
+    
+	<#include "commons/disqus.ftl">
+
 	<#include "commons/sidebar.ftl">
 <#include "footer.ftl">

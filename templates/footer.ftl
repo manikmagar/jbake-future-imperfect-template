@@ -15,6 +15,10 @@
 		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/highlight.pack.js"></script>
 		<script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/readingTime.js"></script>
 
+		<#if (config.site_disqus_shortname?has_content)>
+		<script id="dsq-count-scr" src="//${config.site_disqus_shortname}.disqus.com/count.js" async></script>
+		</#if>
+
 		<!-- This is called by default since this theme uses highlight.js -->
 		<script>hljs.initHighlightingOnLoad();</script>
 		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->

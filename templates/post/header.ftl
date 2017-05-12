@@ -6,6 +6,9 @@
         <#else>
             <h2><a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h2>
         </#if>
+         <#if (config.site_disqus_shortname?has_content)>
+			<span class="disqus-comment-count" data-disqus-url="${config.site_host}/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"></span>
+		</#if>
        	<#if (post.description != null)??>
             <p>${post.description}</p>
         </#if>
