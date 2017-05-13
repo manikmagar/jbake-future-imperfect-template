@@ -12,7 +12,7 @@ Live example can be seen [here](https://manik.magar.me/).
 
 First, make sure you install JBake as per instructions [here](http://jbake.org/download.html).
 
-Once you have JBake, assuming you are creating a site called '**awesome-jbake**', in the terminal/command window -
+Once you have JBake, assuming you are creating a site called '**awesome-jbake**', in the terminal/command window run below commands -
 
 ```shell
 >> mkdir awesome-jbake
@@ -23,9 +23,9 @@ Once you have JBake, assuming you are creating a site called '**awesome-jbake**'
 
 ```
 
-You should see a this repo files in there. Check [JBake 2.5.1 Documentation](http://jbake.org/docs/2.5.1/#project_structure) to understand this structure. 
+You should see this repo files in there. Check [JBake 2.5.1 Documentation](http://jbake.org/docs/2.5.1/#project_structure) to understand this structure. 
 
-To see in action, while in awesome-jbake folder, run `jbake -b -s`, in few seconds your site should be live on http://localhost:8820/, you can visit it in browser.
+To see in action, while in awesome-jbake folder, run `jbake -b -s`. In few seconds your site should be live on http://localhost:8820/, you can visit it in browser.
 
 ## Configuring jbake.properties
 
@@ -57,7 +57,7 @@ Template allows you to capture Page Views. To enable it, just add your GA Tracki
 
 ---
 
-You can enable Estimated Reading time on your posts, by setting `site.includeReadTiem=true` in jbake.properties. This reading time is calcualted using [this](https://github.com/michael-lynch/reading-time) reading time javascript library.
+You can enable Estimated Reading time on your posts, by setting `site.includeReadTiem=true` in jbake.properties. This reading time is calculated using [this](https://github.com/michael-lynch/reading-time) reading time javascript library.
 
 ### Site Main Menu
 
@@ -86,15 +86,11 @@ You MUST define label, url and icon properties for each menu item in `site.menus
 
 You can control your social links by adding your social handlers for sidebar.social.* propeties. 
 
-
-
 ## Adding 404 page not found for GitHub
 
 ---
 
 If you are hosting your static site on Github, then Github allows to set 404 error page. Content folder has a file called 404.html which is of type 'page' (i.e. it will be rendered by page template). You can modify this file content if neeeded but default included one also looks good :). This file **must be** at the root of content folder so that it gets rendered to root directory of your github pages. Rest will be take care by Github to show this file when user tries to non-existent url.
-
-
 
 ## Post Featured Images
 
@@ -109,9 +105,17 @@ featuredalt=alternate text for image
 
 
 
+## About me
 
+---
 
+Feel free to give a shout on twitter [@manikmagar](https://twitter.com/manikmagar) and [@javabake](https://twitter.com/manikmagar)
 
+## License
+
+---
+
+This theme is released under the MIT license. Please read the [license](LICENSE.md) for more information.
 
 
 
