@@ -6,7 +6,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', '${config.site_google_trackingid}', 'auto');
   ga('send', 'pageview', {
-    'page': '${(config.uri_noExtension?boolean == true)?then(content.noExtensionUri??,content.uri!config.site_host)}',
+    'page': '${content.noExtensionUri!(content.uri!config.site_host)}',
     'title': '${content.title!config.site_title}'
       });
 </script>

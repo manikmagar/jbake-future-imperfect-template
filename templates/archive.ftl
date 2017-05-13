@@ -19,9 +19,9 @@
 						<ul class="post">
 					</#if>
 					<li>
-				        <article data-file="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}" data-target="article">
+				        <article data-file="${content.rootpath}${post.noExtensionUri!post.uri}" data-target="article">
 				        	<header>
-				            	<p>${post.date?string("dd")} - <a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"><#escape x as x?xml>${post.title}</#escape></a>  <#if ((config.site_includeReadTime!'true')?boolean == true)> <div class="eta"></div></#if></p>
+				            	<p>${post.date?string("dd")} - <a href="${content.rootpath}${post.noExtensionUri!post.uri}"><#escape x as x?xml>${post.title}</#escape></a>  <#if ((config.site_includeReadTime!'true')?boolean == true)> <div class="eta"></div></#if></p>
 				            <header>
 				        </article>
 				    </li>

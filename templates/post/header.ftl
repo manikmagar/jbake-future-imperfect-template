@@ -1,13 +1,13 @@
 <header>
     <div class="title">
         <#if (titleH1 == true)??>
-            <h1><a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h1>
+            <h1><a href="${content.rootpath}${post.noExtensionUri!post.uri}">${post.title}</a></h1>
             <#assign titleH1 = false />
         <#else>
-            <h2><a href="${content.rootpath}${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}">${post.title}</a></h2>
+            <h2><a href="${content.rootpath}${post.noExtensionUri!post.uri}">${post.title}</a></h2>
         </#if>
          <#if (config.site_disqus_shortname?has_content)>
-			<span class="disqus-comment-count" data-disqus-url="${config.site_host}/${(config.uri_noExtension?boolean == true)?then(post.noExtensionUri??,post.uri)}"></span>
+			<span class="disqus-comment-count" data-disqus-url="${config.site_host}/${post.noExtensionUri!post.uri}"></span>
 		</#if>
        	<#if (post.description != null)??>
             <p>${post.description}</p>
