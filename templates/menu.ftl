@@ -1,9 +1,9 @@
 <!-- Header -->
 <header id="header">
     <#if (content == null)??>
-        <h1><a href="/">${config.site_title}</i></a></h1>
+        <h1><a href="${content.rootpath}">${config.site_title}</i></a></h1>
     <#else>
-        <h2><a href="/">${config.site_title}</i></a></h2>
+        <h2><a href="${content.rootpath}">${config.site_title}</i></a></h2>
     </#if>
 
     <nav class="links">
