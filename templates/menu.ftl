@@ -11,7 +11,7 @@
         	<#list config.site_menus_main as menuItem1>
         		<#if (config.site_menus_main_showTagsDropdown?boolean)?? == true && menuItem1 == 'tags'>
         			<li>
-	                    <a href="{config['site_menus_main_' + menuItem1 + '_url']}">
+	                    <a href="${content.rootpath}{config['site_menus_main_' + menuItem1 + '_url']}">
 	                       
 	                       <i class="${config['site_menus_main_' + menuItem1 + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem1 + '_label']}
 	                        
@@ -26,7 +26,7 @@
         			
         		<#else>
         			<li>
-	                    <a href="${config['site_menus_main_' + menuItem1 + '_url']}">
+	                    <a href="${content.rootpath}${config['site_menus_main_' + menuItem1 + '_url']}">
 	                       
 	                            <i class="${config['site_menus_main_' + menuItem1 + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem1 + '_label']}
 	                        
@@ -75,7 +75,7 @@
             <ul class="links">
                 <#list config.site_menus_main as menuItem>
         		 <li>
-                    <a href="${config['site_menus_main_' + menuItem + '_url']}">
+                    <a href="${content.rootpath}${config['site_menus_main_' + menuItem + '_url']}">
                        
                             <i class="${config['site_menus_main_' + menuItem + '_icon']}">&nbsp;</i>${config['site_menus_main_' + menuItem + '_label']}
                         
@@ -94,7 +94,7 @@
                 <#list published_posts as menuPost1>
                 	<#if (menuPost1?counter > config.sidebar_postAmount?number) ><#break/></#if>
                     <li>
-                        <a href="${content.rootpath}${menuPost1.noExtensionUri!menuPost1.uri}"><p>${menuPost1.title}</p></a>
+                        <a href="${content.rootpath}${content.rootpath}${menuPost1.noExtensionUri!menuPost1.uri}"><p>${menuPost1.title}</p></a>
                     </li>
                 </#list>
             </ul>

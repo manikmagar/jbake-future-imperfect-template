@@ -4,12 +4,12 @@
     <!-- Intro -->
         <section id="intro">
                 <#if (config.sidebar_intro_pic_circle?boolean == true)>
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                
                 <#elseif (config.sidebar_intro_pic_imperfect?boolean == true) >
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
                 <#else>
-                    <a href="/" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
                  </#if>
                  
                 <header>
@@ -52,7 +52,7 @@
 				<#if (published_posts?size > config.sidebar_postAmount?number) >
                     <li>
                         <ul class="actions">
-                            <li><a href=${config.sidebar_viewMorePostLink?has_content?then(config.sidebar_viewMorePostLink,config.archive_path)}
+                            <li><a href="${content.rootpath}${config.sidebar_viewMorePostLink?has_content?then(config.sidebar_viewMorePostLink,config.archive_path)}"
                             class="button">View more posts</a></li>
                         </ul>
                     </li>
@@ -90,7 +90,7 @@
             <p>${config.sidebar_intro_about}</p>
 
             <ul class="actions">
-                <li><a href="${config.sidebar_intro_about_learnMore}" class="button">Learn More</a></li>
+                <li><a href="${content.rootpath}${config.sidebar_intro_about_learnMore}" class="button">Learn More</a></li>
             </ul>
         </section>
 
