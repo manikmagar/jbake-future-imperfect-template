@@ -1,7 +1,7 @@
 <header>
     <div class="title">
         <h1>${post.title}</h1>
-       	<#if (post.description != null)??>
+       	<#if (post.description?has_content)>
             <p>${post.description}</p>
         </#if>
     </div>

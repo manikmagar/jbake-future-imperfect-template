@@ -9,7 +9,7 @@
          <#if (config.site_disqus_shortname?has_content)>
 			<span class="disqus-comment-count" data-disqus-url="${config.site_host}/${post.noExtensionUri!post.uri}"></span>
 		</#if>
-       	<#if (post.description != null)??>
+       	<#if (post.description?has_content)>
             <p>${post.description}</p>
         </#if>
     </div>
