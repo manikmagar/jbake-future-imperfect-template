@@ -5,10 +5,9 @@
             <#assign titleH1 = false />
         <#else>
             <h2><a href="${content.rootpath}${post.noExtensionUri!post.uri}">${post.title}</a></h2>
+
         </#if>
-         <#if (config.site_disqus_shortname?has_content)>
-			<span class="disqus-comment-count" data-disqus-url="${config.site_host}/${post.noExtensionUri!post.uri}"></span>
-		</#if>
+
        	<#if (post.description?has_content)>
             <p>${post.description}</p>
         </#if>
@@ -17,10 +16,7 @@
          <time class="published"
             datetime='${post.date?string("MMM dd, yyyy")}'>
             ${post.date?string("MMM dd, yyyy")}</time>
-            <#if ((config.site_includeReadTime!'true')?boolean == true)><div class="eta"></div></#if>
-       <!--  {{ if .Site.Params.includeReadingTime }}
-            <p>{{ .ReadingTime }} minute read</p>
-        {{ end }} -->
+            <#if ((config.site_includeReadTime!'true')?boolean == true)><div class="published eta"></div></#if>
         <#if (config.site_author_avatar??) >
         <span class="author"/><span class="name">${post.author!config.site_author}</span><img src="${content.rootpath}${post.author_avatar!config.site_author_avatar}" alt="${post.author!config.site_author}" /></span>
         </#if>
