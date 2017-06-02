@@ -70,9 +70,9 @@
         		
         		 
         			<li>
-	                    <a href=" feed.xml">
+	                    <a href=" feed.json">
 	                       
-	                            <i class="fa fa-rss">&nbsp;</i>RSS
+	                            <i class="fa fa-rss">&nbsp;</i>Subscribe
 	                        
 	                    </a>
                 	</li>
@@ -132,9 +132,9 @@
                     </a>
                 </li>
         		 <li>
-                    <a href=" feed.xml">
+                    <a href=" feed.json">
                        
-                            <i class="fa fa-rss">&nbsp;</i>RSS
+                            <i class="fa fa-rss">&nbsp;</i>Subscribe
                         
                     </a>
                 </li>
@@ -168,15 +168,14 @@
    <header>
     <div class="title">
                     <h2><a href="blog/2013/first-post.html">First Post</a></h2>
+
+
     </div>
     <div class="meta">
          <time class="published"
             datetime='Jul 24, 2013'>
             Jul 24, 2013</time>
-            <div class="eta"></div>
-       <!--  {{ if .Site.Params.includeReadingTime }}
-            <p>{{ .ReadingTime }} minute read</p>
-        {{ end }} -->
+            <div class="published eta"></div>
         <span class="author"/><span class="name">Manik Magar</span><img src="img/main/avatar.png" alt="Manik Magar" /></span>
     </div>
 </header>
@@ -264,11 +263,12 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.</p>
     </div>
 
     <footer>
-		
+	
 		<ul class="stats">
     	    <!-- Display the categories associated with this post -->
     	    <li><i class="fa fa-tags">&nbsp;</i>  Tags: </li>
  	        <li><a href='tags/blog.html'>blog</a></li>
+
  		</ul>
     	
     </footer>
@@ -302,7 +302,7 @@ libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.</p>
                 </header>
                 
             <ul class="icons">
-                    <li><a href="feed.xml" type="application/rss+xml"
+                    <li><a href="feed.json" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
 <li><a href="//github.com/manikmagar" target="_blank" title="GitHub" class="fa fa-github"></a></li>
 
