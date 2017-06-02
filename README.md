@@ -21,7 +21,7 @@ Once you have JBake, assuming you are creating a site called '**awesome-jbake**'
 
 ```
 
-You should see this repo files in there. Check [JBake 2.5.1 Documentation](http://jbake.org/docs/2.5.1/#project_structure) to understand this structure. 
+You should see this repo files in there. Check [JBake 2.5.1 Documentation](http://jbake.org/docs/2.5.1/#project_structure) to understand this structure.
 
 To see in action, while in awesome-jbake folder, run `jbake -b -s`. In few seconds your site should be live on http://localhost:8820/, you can visit it in browser.
 
@@ -70,7 +70,7 @@ You MUST define label, url and icon properties for each menu item in `site.menus
 
 ### Social Links
 
-You can control your social links by adding your social handlers for sidebar.social.* propeties. 
+You can control your social links by adding your social handlers for sidebar.social.* propeties.
 
 ## Adding 404 page not found for GitHub
 
@@ -85,6 +85,23 @@ featuredimage=img/{path to image}
 featuredalt=alternate text for image
 ```
 
+## Feeds
+### JSON Feed
+This template by default generates [JSON feed](https://jsonfeed.org/version/1). Following is the configuration related to this -
+```properties
+site.menus.main.rss.label=Subscribe
+## change below url to feed.xml for tradional RSS Feed
+site.menus.main.rss.url=feed.json
+site.menus.main.rss.icon=fa fa-rss
+
+## Commnet below two properties to generate, tradional XML RSS feed.
+feed.file=feed.json
+template.feed.file=feed-json.ftl
+
+```
+
+### RSS XML feed
+It is possible to have tradional XML RSS feed. Make the changes in jbake.properties, as suggested in comments above. Bake your site again.
 
 
 ## About me
@@ -94,6 +111,3 @@ Feel free to give a shout on twitter [@manikmagar](https://twitter.com/manikmaga
 ## License
 
 This theme is released under the MIT license. Please read the [license](LICENSE.md) for more information.
-
-
-
