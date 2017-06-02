@@ -1,7 +1,7 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "${config.site_title}",
-    "description": "${config.site_description!''}",
+    "description": "${config.site_description!' '}",
     "home_page_url": "${config.site_host}",
     "feed_url": "${config.site_host}/${config.feed_file}",
     "author" : {
