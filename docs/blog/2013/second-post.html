@@ -35,7 +35,7 @@
   <body>
      <!-- Wrapper -->
         <div id="wrapper">
-	
+
 <!-- Header -->
 <header id="header">
             <h2><a href="https://manikmagar.github.io/jbake-future-imperfect-template">JBake Blog</i></a></h2>
@@ -70,9 +70,9 @@
         		
         		 
         			<li>
-	                    <a href=" ../../feed.xml">
+	                    <a href=" ../../feed.json">
 	                       
-	                            <i class="fa fa-rss">&nbsp;</i>RSS
+	                            <i class="fa fa-rss">&nbsp;</i>Subscribe
 	                        
 	                    </a>
                 	</li>
@@ -132,9 +132,9 @@
                     </a>
                 </li>
         		 <li>
-                    <a href=" ../../feed.xml">
+                    <a href=" ../../feed.json">
                        
-                            <i class="fa fa-rss">&nbsp;</i>RSS
+                            <i class="fa fa-rss">&nbsp;</i>Subscribe
                         
                     </a>
                 </li>
@@ -170,15 +170,14 @@
    <header>
     <div class="title">
                     <h1><a href="../../blog/2013/second-post.html">Second Post</a></h1>
+
+            <p>This is a description of second post.</p>
     </div>
     <div class="meta">
          <time class="published"
             datetime='Aug 25, 2013'>
             Aug 25, 2013</time>
-            <div class="eta"></div>
-       <!--  {{ if .Site.Params.includeReadingTime }}
-            <p>{{ .ReadingTime }} minute read</p>
-        {{ end }} -->
+            <div class="published eta"></div>
         <span class="author"/><span class="name">Manik Magar</span><img src="../../img/main/avatar.png" alt="Manik Magar" /></span>
     </div>
 </header>
@@ -243,18 +242,23 @@
     </div>
 
     <footer>
-		
+	
 		<ul class="stats">
     	    <!-- Display the categories associated with this post -->
     	    <li><i class="fa fa-tags">&nbsp;</i>  Tags: </li>
  	        <li><a href='../../tags/blog.html'>blog</a></li>
+
  		</ul>
     	
     </footer>
 </article>
+		
+<ul class="actions pagination">
+  	
+  			
+</ul>
+		
     </div>
-    
-    
 
 <!-- Sidebar -->
 <section id="sidebar">
@@ -270,7 +274,7 @@
                 </header>
                 
             <ul class="icons">
-                    <li><a href="feed.xml" type="application/rss+xml"
+                    <li><a href="feed.json" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
 <li><a href="//github.com/manikmagar" target="_blank" title="GitHub" class="fa fa-github"></a></li>
 
