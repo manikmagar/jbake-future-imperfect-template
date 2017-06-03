@@ -34,7 +34,7 @@
                 <header>
                     <h3>Recent Posts</h3>
                 </header>
-				<#list published_posts as sideBarPost1>
+				<#list posts as sideBarPost1>
 					
                 	<#if (sideBarPost1?counter > config.sidebar_postAmount?number) ><#break/></#if>
                     <li>

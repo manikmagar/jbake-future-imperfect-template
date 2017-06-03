@@ -92,7 +92,7 @@
                 <header>
                     <h3>Recent Posts</h3>
                 </header>
-                <#list published_posts as menuPost1>
+                <#list posts as menuPost1>
                 	<#if (menuPost1?counter > config.sidebar_postAmount?number) ><#break/></#if>
                     <li>
                         <a href="${content.rootpath}${content.rootpath}${menuPost1.noExtensionUri!menuPost1.uri}"><p>${menuPost1.title}</p></a>
