@@ -3,6 +3,7 @@ date=2013-08-25
 last_updated=2017-06-01
 type=post
 tags=blog
+categories=cat1, cat2
 status=published
 author=Manik Magar
 description=This is a description of second post.
