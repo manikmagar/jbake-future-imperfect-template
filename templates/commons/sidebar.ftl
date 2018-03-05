@@ -5,18 +5,18 @@
         <section id="intro">
                 <#if (config.sidebar_intro_pic_circle?boolean == true)>
                     <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" class="intro-circle" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
-               
+
                 <#elseif (config.sidebar_intro_pic_imperfect?boolean == true) >
                     <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" alt="${config.sidebar_intro_pic_alt}" /></a>
                 <#else>
-                    <a href="${content.rootpath}" class="logo"><img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" /></a>
+                    <img src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.sidebar_intro_pic_src}" width="${config.sidebar_intro_pic_width}" alt="${config.sidebar_intro_pic_alt}" />
                  </#if>
-                 
+
                 <header>
                     <h2>${config.sidebar_intro_header}</h2>
                     <p>${config.sidebar_intro_summary}</p>
                 </header>
-                
+
             <ul class="icons">
                 <#if (config.render_feed?boolean == true) >
                     <li><a href="${config.feed_file}" type="application/rss+xml"
@@ -35,7 +35,7 @@
                     <h3>Recent Posts</h3>
                 </header>
 				<#list posts as sideBarPost1>
-					
+
                 	<#if (sideBarPost1?counter > config.sidebar_postAmount?number) ><#break/></#if>
                     <li>
                         <article>
@@ -48,7 +48,7 @@
                         </article>
                     </li>
                 </#list>
-				
+
 				<#if (published_posts?size > config.sidebar_postAmount?number) >
                     <li>
                         <ul class="actions">
@@ -73,8 +73,8 @@
                         <article>
                             <header>
                                 <a href="${content.rootpath}${config.tag_path}/${sideBarTag1}${config.output_extension}">${sideBarTag1}</a>
-                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
-                                <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
+                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, If you are using 2.5.1 or earlier comment below SPAN element. -->
+                                <span style="float:right;"> ${db.getPublishedPostsByTag(sideBarTag1).size()} </span>
                             </header>
                         </article>
                     </li>
@@ -82,7 +82,7 @@
             </ul>
         </section>
     </#if>
-  
+
 
     <!-- About -->
         <section class="blurb">
