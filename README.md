@@ -1,5 +1,7 @@
 # JBake Future Imperfect Template
 
+**_Compatible with JBake 2.6.0_**
+
 Future Imperfect is based on [HTML5 UP's theme](http://html5up.net/future-imperfect). Julio Pescador [ported](https://github.com/jpescador/hugo-future-imperfect) it for SSG websites. Here, it adapted for [JBake](http://jbake.org/).
 
 ![JBake Future Imperfect Blog](jbake_future_imperfect_blog.png)

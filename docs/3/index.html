@@ -70,7 +70,7 @@
         		
         		 
         			<li>
-	                    <a href=" ../feed.json">
+	                    <a href=" ../feed.xml">
 	                       
 	                            <i class="fa fa-rss">&nbsp;</i>Subscribe
 	                        
@@ -132,7 +132,7 @@
                     </a>
                 </li>
         		 <li>
-                    <a href=" ../feed.json">
+                    <a href=" ../feed.xml">
                        
                             <i class="fa fa-rss">&nbsp;</i>Subscribe
                         
@@ -148,7 +148,10 @@
                     <h3>Recent Posts</h3>
                 </header>
                     <li>
-                        <a href="../../blog/2013/second-post.html"><p>Second Post</p></a>
+                        <a href="../../blog/2013/fourth-post.html"><p>Fourth Post</p></a>
+                    </li>
+                    <li>
+                        <a href="../../blog/2013/third-post.html"><p>Third Post</p></a>
                     </li>
             </ul>
         </section>
@@ -185,14 +188,12 @@
   
          
     <div id="content">
-       <body>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.</p> 
- <ul> 
-  <li><a href="http://example.org">http://example.org</a></li> 
-  <li><a href="http://example.org">Example.org</a></li> 
- </ul> 
- <p>Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,<br>mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo<br>ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet<br>ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,<br>id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In<br>consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere<br>libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.</p>
-</body>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.</p> 
+<ul> 
+ <li><a href="http://example.org">http://example.org</a></li> 
+ <li><a href="http://example.org">Example.org</a></li> 
+</ul> 
+<p>Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,<br> mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo<br> ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet<br> ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus,<br> id auctor arcu enim eu augue. Donec ultrices turpis in mi imperdiet ac venenatis sapien sodales. In<br> consequat imperdiet nunc quis bibendum. Nulla semper, erat quis ornare tristique, lectus massa posuere<br> libero, ut vehicula lectus nunc ut lorem. Aliquam erat volutpat.</p>
     </div>
 	
 	<section id="social-share">
@@ -276,15 +277,15 @@
     <!-- Intro -->
         <section id="intro">
                                     <a href="../" class="logo"><img src="../img/main/icon.png" class="intro-circle" width="150px" alt="Jbake Blog" /></a>
-               
-                 
+
+
                 <header>
                     <h2>JBake Blog</h2>
                     <p>Another blog baked with JBake.</p>
                 </header>
-                
+
             <ul class="icons">
-                    <li><a href="feed.json" type="application/rss+xml"
+                    <li><a href="feed.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
 <li><a href="//github.com/manikmagar" target="_blank" title="GitHub" class="fa fa-github"></a></li>
 
@@ -322,18 +323,30 @@
                 <header>
                     <h3>Recent Posts</h3>
                 </header>
-					
+
                     <li>
                         <article>
                             <header>
-                                <h3><a href="../blog/2013/second-post.html">Second Post</a></h3>
+                                <h3><a href="../blog/2013/fourth-post.html">Fourth Post</a></h3>
                                  <time class="published"
-							            datetime='Aug 25, 2013'>
-							            Aug 25, 2013</time>
+							            datetime='Oct 17, 2013'>
+							            Oct 17, 2013</time>
                             </header>
                         </article>
                     </li>
-				
+
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="../blog/2013/third-post.html">Third Post</a></h3>
+                                 <time class="published"
+							            datetime='Sep 26, 2013'>
+							            Sep 26, 2013</time>
+                            </header>
+                        </article>
+                    </li>
+
+
             </ul>
         </section>
 
@@ -348,8 +361,8 @@
                         <article>
                             <header>
                                 <a href="../tags/asciidoc.html">asciidoc</a>
-                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
-                                <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
+                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, If you are using 2.5.1 or earlier comment below SPAN element. -->
+                                <span style="float:right;"> 2 </span>
                             </header>
                         </article>
                     </li>
@@ -357,14 +370,14 @@
                         <article>
                             <header>
                                 <a href="../tags/blog.html">blog</a>
-                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
-                                <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
+                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, If you are using 2.5.1 or earlier comment below SPAN element. -->
+                                <span style="float:right;"> 4 </span>
                             </header>
                         </article>
                     </li>
             </ul>
         </section>
-  
+
 
     <!-- About -->
         <section class="blurb">
@@ -378,7 +391,7 @@
 
 
         <section id="footer">
-            <p class="copyright">&copy; JBake Blog. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported For SSG by <a href="https://github.com/jpescador/hugo-future-imperfect">Julio Pescador</a>. Adapted to JBake by <a href="//github.com/manikmagar" target="_blank">Manik Magar</a>. Baked with <a href="http://jbake.org">JBake v${jbakeVersion}</a>.
+            <p class="copyright">&copy; JBake Blog. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported For SSG by <a href="https://github.com/jpescador/hugo-future-imperfect">Julio Pescador</a>. Adapted to JBake by <a href="//github.com/manikmagar" target="_blank">Manik Magar</a>. Baked with <a href="http://jbake.org">JBake v2.6.0</a>.
             <a href="/sitemap.xml" target="_blank">Sitemap</a>.</p>
         </section>
 

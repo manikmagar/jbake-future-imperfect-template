@@ -70,7 +70,7 @@
         		
         		 
         			<li>
-	                    <a href=" feed.json">
+	                    <a href=" feed.xml">
 	                       
 	                            <i class="fa fa-rss">&nbsp;</i>Subscribe
 	                        
@@ -132,7 +132,7 @@
                     </a>
                 </li>
         		 <li>
-                    <a href=" feed.json">
+                    <a href=" feed.xml">
                        
                             <i class="fa fa-rss">&nbsp;</i>Subscribe
                         
@@ -182,11 +182,9 @@
   
          
     <div id="content">
-       <body> 
- <div id="main"> 
-  <h1> We're sorry, but that page can't be found <i class="fa fa-frown-o"></i> </h1> 
- </div> 
-</body>
+       <div id="main"> 
+ <h1> We're sorry, but that page can't be found <i class="fa fa-frown-o"></i> </h1> 
+</div>
     </div>
 
     <footer>
@@ -200,15 +198,15 @@
     <!-- Intro -->
         <section id="intro">
                                     <a href="" class="logo"><img src="img/main/icon.png" class="intro-circle" width="150px" alt="Jbake Blog" /></a>
-               
-                 
+
+
                 <header>
                     <h2>JBake Blog</h2>
                     <p>Another blog baked with JBake.</p>
                 </header>
-                
+
             <ul class="icons">
-                    <li><a href="feed.json" type="application/rss+xml"
+                    <li><a href="feed.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
 <li><a href="//github.com/manikmagar" target="_blank" title="GitHub" class="fa fa-github"></a></li>
 
@@ -246,7 +244,7 @@
                 <header>
                     <h3>Recent Posts</h3>
                 </header>
-					
+
                     <li>
                         <article>
                             <header>
@@ -257,7 +255,7 @@
                             </header>
                         </article>
                     </li>
-					
+
                     <li>
                         <article>
                             <header>
@@ -268,8 +266,8 @@
                             </header>
                         </article>
                     </li>
-					
-				
+
+
                     <li>
                         <ul class="actions">
                             <li><a href="archive.html"
@@ -290,8 +288,8 @@
                         <article>
                             <header>
                                 <a href="tags/asciidoc.html">asciidoc</a>
-                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
-                                <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
+                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, If you are using 2.5.1 or earlier comment below SPAN element. -->
+                                <span style="float:right;"> 2 </span>
                             </header>
                         </article>
                     </li>
@@ -299,14 +297,14 @@
                         <article>
                             <header>
                                 <a href="tags/blog.html">blog</a>
-                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, This can be enabled once issue is fixed. -->
-                                <!-- <span style="float:right;"> (db.getPublishedPostsByTag(sideBarTag1).size()) </span>-->
+                                <!-- JBake 2.5.1 Issue#357 prevents accessing db, If you are using 2.5.1 or earlier comment below SPAN element. -->
+                                <span style="float:right;"> 4 </span>
                             </header>
                         </article>
                     </li>
             </ul>
         </section>
-  
+
 
     <!-- About -->
         <section class="blurb">
@@ -320,7 +318,7 @@
 
 
         <section id="footer">
-            <p class="copyright">&copy; JBake Blog. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported For SSG by <a href="https://github.com/jpescador/hugo-future-imperfect">Julio Pescador</a>. Adapted to JBake by <a href="//github.com/manikmagar" target="_blank">Manik Magar</a>. Baked with <a href="http://jbake.org">JBake v${jbakeVersion}</a>.
+            <p class="copyright">&copy; JBake Blog. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported For SSG by <a href="https://github.com/jpescador/hugo-future-imperfect">Julio Pescador</a>. Adapted to JBake by <a href="//github.com/manikmagar" target="_blank">Manik Magar</a>. Baked with <a href="http://jbake.org">JBake v2.6.0</a>.
             <a href="/sitemap.xml" target="_blank">Sitemap</a>.</p>
         </section>
 
