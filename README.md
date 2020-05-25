@@ -1,12 +1,12 @@
 # JBake Future Imperfect Template
 
-**_Compatible with JBake 2.6.0_**
+**_Compatible with JBake 2.6.5_**
 
 Future Imperfect is based on [HTML5 UP's theme](http://html5up.net/future-imperfect). Julio Pescador [ported](https://github.com/jpescador/hugo-future-imperfect) it for SSG websites. Here, it adapted for [JBake](http://jbake.org/).
 
 ![JBake Future Imperfect Blog](jbake_future_imperfect_blog.png)
 
-Live example can be seen [here](https://manik.magar.me/).
+Live example can be seen [here](https://unittesters.com/).
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ Once you have JBake, assuming you are creating a site called '**awesome-jbake**'
 
 ```
 
-You should see this repo files in there. Check [JBake 2.5.1 Documentation](http://jbake.org/docs/2.5.1/#project_structure) to understand this structure.
+You should see this repo files in there. Check [JBake 2.5.1 Documentation](https://jbake.org/docs/latest/#project_structure) to understand this structure.
 
 To see in action, while in awesome-jbake folder, run `jbake -b -s`. In few seconds your site should be live on http://localhost:8820/, you can visit it in browser.
 
